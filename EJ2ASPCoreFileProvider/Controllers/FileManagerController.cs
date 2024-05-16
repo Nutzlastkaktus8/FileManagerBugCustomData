@@ -71,7 +71,7 @@ namespace EJ2APIServices.Controllers
 
         // uploads the file(s) into a specified path
         [Route("Upload")]
-        public IActionResult Upload(string path, IList<IFormFile> uploadFiles, string action)
+        public IActionResult Upload(string path, IList<IFormFile> uploadFiles, string action,string CustomData)
         {
             try
             {

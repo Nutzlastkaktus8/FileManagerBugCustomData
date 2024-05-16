@@ -62,6 +62,7 @@ namespace BFIFileManager.Components
                 {
                     { "CurrentFolderId", 1},
                 };
+                //is not send to backend
                 args.CustomData = newdiconary;
             }
         }
