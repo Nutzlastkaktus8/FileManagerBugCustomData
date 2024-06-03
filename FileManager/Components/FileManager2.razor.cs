@@ -20,9 +20,9 @@ namespace BFIFileManager.Components
 {
     public partial class FileManager2
     {
-        public string Url = "http://localhost:62869/api/FileManager/FileOperations";
-        public string DownloadUrl = "http://localhost:62869/api/FileManager/Download";
-        public string UploadUrl = "http://localhost:62869/api/FileManager/Upload";
+        public string Url = "http://localhost:62870/api/FileManager/FileOperations";
+        public string DownloadUrl = "http://localhost:62870/api/FileManager/Download";
+        public string UploadUrl = "http://localhost:62870/api/FileManager/Upload";
         public int FileSize { get; set; } = 15 * 1024 * 1024;
         public string[] ValidFileTypes = new string[]
         {

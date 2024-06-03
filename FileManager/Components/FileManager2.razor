@@ -1,10 +1,13 @@
-﻿<h3>FileManager</h3>
+﻿@inject HttpClient client
+
+<h3>FileManager</h3>
 
 <SfFileManager TValue="FileManagerDirectoryContent">
     <FileManagerNavigationPaneSettings Visible="true" />
     <FileManagerAjaxSettings Url=@Url
                              DownloadUrl=@DownloadUrl
-                             UploadUrl=@UploadUrl>
+                             UploadUrl=@UploadUrl
+                             HttpClientInstance="@client">
     </FileManagerAjaxSettings>
     <FileManagerUploadSettings MaxFileSize="@FileSize" AllowedExtensions="@FileTypes" />
     <FileManagerEvents TValue="Syncfusion.Blazor.FileManager.FileManagerDirectoryContent" OnSend="Send"></FileManagerEvents>
